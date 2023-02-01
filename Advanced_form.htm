@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance_Form</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        form{
+            background-color: bisque;
+            padding:30px;
+            border: 3px solid red;
+            min-width: 100px;
+            max-width: 70%;
+        }
+        .btns{
+            background-color: forestgreen;
+        }
+        .btns1{
+            background-color: rgb(226, 18, 18);
+        }
+    </style>
+ </head>
+ <body>
+    <form method="post">
+        <marquee behavior="alternate" scrollamount="10"
+            bgcolor="white" hight="100px">
+            <h3>Fill Form Data</h3>
+        </marquee>
+        <table>
+            <tr>
+                <th><label>Ename :</label></th>
+                <td><input type="text" name="ename"></td>
+            </tr>
+            <tr>
+                <th><label>Email :</label></th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th><label>Joining Date :</label></th>
+                <td><input type="date" name="jdate"></td>
+            </tr>
+            <tr>
+                <th><label>Login Time :</label></th>
+                <td><input type="time" name="ltime"></td>
+            </tr>
+            <tr>
+                <th><label>Birth Date :</label></th>
+                <td><input type="date" name="bdate"></td>
+            </tr>
+            <tr>
+                <th><label>Select your <mark>Company name :</mark></label></th>
+                <td>
+                    <select name="company" multiple>
+                        <option value="tcs">TCS</option>
+                        <option value="ibm">IBM</option>
+                        <option value="infosys">Infosys</option>
+                        <option value="wipro">Wipro</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label>Select Gender :</label></th>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+                </td>
+            </tr>
+            <tr>
+                <th><label>Select <mark>Prepered Location</mark> :</label></th>
+                <td>
+                    <input type="checkbox" name="location" value="hyderabad">Hyderabad
+                    <input type="checkbox" name="location" value="bangalore">Bangalore
+                    <input type="checkbox" name="location" value="mumbai">Mumbai
+                    <input type="checkbox" name="location" value="pune">Pune
+                </td>
+            </tr>
+            <tr>
+                <th><label>Select your <strong>Qualification</strong></label></th>
+                <td>
+                    <input list="qualification">
+                    <datalist id="qualification">
+                        <option>B-Tech</option>
+                        <option>MCA</option>
+                        <option>M-Tech</option>
+                        <option>BE</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <th>Upload your Resume :</th>
+                <td><input type="file" name="resume"></td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend>Personal Infomation</legend>
+            <table>
+                <tr>
+                   <th>Father Name:</th>
+                   <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <th>Mather Name:</th>
+                    <td><input type="text" name="mname"></td>
+                 </tr>
+                 <tr>
+                    <th>Mobile:</th>
+                    <td><input type="number" name="monile"></td>
+                 </tr>
+            </table>
+        </fieldset>
+
+        <div style="margin-left: 150px;">
+            <input type="submit" value="Send" class="btns">
+            <input type="reset" value="Clear" class="btns1">
+        </div>
+
+    </form>
+ </body>
+ </html>
